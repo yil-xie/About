@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Explore History — DSSC Food Park</title>
+
+  <!-- reuse boxicons (same as your index) -->
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet">
+
+  <!-- site base stylesheet (keeps site look consistent) -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- page-specific styles -->
+  <link rel="stylesheet" href="assets/css/explore.css">
+  <style>
+    /* Smooth entry only for content, not header */
+main, footer {
+  opacity: 0;
+  transform: translateY(15px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in main,
+.fade-in footer {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-out main,
+.fade-out footer {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+  </style>
+</head>
+<body>
+  <!-- header (same classes as your site so nav + theme button behave the same) -->
+
+  <header class="l-header" id="header">
+    
+    <nav class="nav bd-container">
+      <a href="index.html" class="nav__logo">DSSC Food Park</a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+
+          <li class="nav__item"><a href="index.html#home" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="index.html#about" class="nav__link active-link">About</a></li>
+                        <li class="nav__item"><a href="index.html#services" class="nav__link">Services</a></li>
+                        <li class="nav__item"><a href="index.html#menu" class="nav__link">Menu</a></li>
+                        <li class="nav__item"><a href="index.html#contact" class="nav__link">Contact us</a></li>
+          <!-- theme toggle uses your same id so localStorage choice persists site-wide -->
+          <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
+        </ul>
+      </div>
+
+      <div class="nav__toggle" id="nav-toggle">
+        <i class='bx bx-menu'></i>
+      </div>
+    </nav>
+  </header>
+
+  <main class="l-main">
+    <section class="section bd-container" id="history">
+      <span class="section-subtitle">Explore</span>
+      <h2 class="section-title">History of Food Park Tambayan</h2>
+        <!-- Food Park Banner (full width) -->
+<div style="width:100%;">
+  <img src="assets/img/foodparksign.jpg" 
+      alt="Davao del Sur State College Food Park Banner"
+      style="display:block; width:100%; height: 400px;; object-fit:cover;">
+</div>
+      <div class="history__intro">
+        <p>
+          <br><br>
+          Food Park Tambayan began as a small campus food stall with a simple goal: make great food accessible and affordable for students.
+          Over time it grew into a lively food park where local vendors share flavors, events bring the community together, and convenient services
+          like delivery and reservations were added. Below is a compact timeline showing how the park evolved.
+        </p>
+      </div>
+
+      
+
+
+
+      <!-- CTA back to landing -->
+      <div class="explore-cta">
+        <!-- CLAYGO Awareness Section -->
+<section class="claygo-section">
+  <h2 class="section-title">Clean As You Go (CLAYGO) Reminder</h2>
+  <p class="claygo-text">
+    📢 <strong>Attention Students of Davao del Sur State College! 🌿</strong><br><br>
+    Our school is strongly implementing the <strong>CLAYGO (Clean As You Go)</strong> policy and promoting sustainable practices, 
+    such as the ban on single-use plastics. As responsible students, it is our duty to uphold these rules and contribute to a 
+    cleaner, greener campus. 🌏✨<br><br>
+    👉 If you eat at the Food Park or anywhere on campus, please dispose of your garbage properly and always leave the place 
+    cleaner than you found it. Remember, small actions lead to big changes — and together, we can build a culture of discipline, 
+    respect, and sustainability. 💚<br><br>
+    𝑳𝒆𝒕’𝒔 𝒃𝒆 𝒕𝒉𝒆 𝒈𝒆𝒏𝒆𝒓𝒂𝒕𝒊𝒐𝒏 𝒕𝒉𝒂𝒕 𝒏𝒐𝒕 𝒐𝒏𝒍𝒚 𝒅𝒓𝒆𝒂𝒎𝒔 𝒐𝒇 𝒂 𝒃𝒆𝒕𝒕𝒆𝒓 𝒇𝒖𝒕𝒖𝒓𝒆, 
+    𝒃𝒖𝒕 𝒂𝒍𝒔𝒐 𝒂𝒄𝒕𝒔 𝒐𝒏 𝒊𝒕 𝒕𝒐𝒅𝒂𝒚! 🌟<br><br>
+    🖊️: Shanrell G. Ampin - SEnSS President <br>
+    🎨: Noelle Mae R. Bagal - Multimedia Committee
+    <br><br>
+  </p>
+
+  <!-- CLAYGO Image Gallery -->
+<div class="claygo-gallery">
+  <img src="assets/img/A1.jpg" alt="CLAYGO Awareness Photo 1" style="width:790px; border-radius:0.5rem;">
+</div>
+
+
+</section>
+
+      <!-- Timeline -->
+    <div class="timeline">
+  <div class="timeline-item">
+    <div class="timeline-date">2024</div>
+    <div class="timeline-body">
+      <h3>Grand Launching</h3>
+      <p>The DSSC Food Park officially opened in 2024, bringing together local vendors and students for its first big launch event. It became an instant hit for its variety of food choices and relaxing campus vibe.</p>
+      
+      <!-- Image carousel -->
+      <div class="carousel">
+        <button class="carousel-btn prev" onclick="changeImage(-1)">&#10094;</button>
+        <img src="assets/img/launch1.jpg" alt="Food Park Launch Photo" id="carouselImage" class="timeline-img">
+        <button class="carousel-btn next" onclick="changeImage(1)">&#10095;</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="timeline-item highlight">
+    <div class="timeline-date">Now</div>
+    <div class="timeline-body">
+      <h3>Continuing the Journey</h3>
+      <p>The Food Park continues to grow, welcoming new stalls, improving services, and offering a space where students and locals can enjoy fresh, affordable meals every day.</p>
+    </div>
+  </div>
+</div>
+
+        <a href="index.html" class="button">Back to Home</a>
+        <button id="downloadHistory" class="button" style="margin-left:12px">Download (PDF)</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- reuse footer (same classes as your site) -->
+  <footer class="footer section bd-container">
+    <div class="footer__container bd-grid">
+      <div class="footer__content">
+        <a href="#" class="footer__logo">DSSC Food Park</a>
+        <span class="footer__description">Vendors and Stalls</span>
+      </div>
+      <div class="footer__content">
+        <h3 class="footer__title">Contact</h3>
+        <ul>
+          <li class="footer__link">Matti, Digos City, Davao del Sur</li>
+          <li class="footer__link">+63 912 345 6789</li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer__copy">&#169; 2025 DSSC Food Park. All rights reserved</p>
+  </footer>
+
+  <script>
+  // Fade in when page loads
+  document.addEventListener("DOMContentLoaded", () => {
+    document.body.classList.add("fade-in");
+  });
+
+  // Fade out when navigating to another internal page
+  const links = document.querySelectorAll("a[href]");
+  links.forEach(link => {
+    const url = new URL(link.href, window.location.href);
+    const isSameOrigin = url.origin === window.location.origin;
+
+    if (isSameOrigin && !link.target && !link.href.startsWith('#')) {
+      link.addEventListener("click", function (e) {
+        e.preventDefault();
+        document.body.style.opacity = 0;
+        setTimeout(() => {
+          window.location = this.href;
+        }, 300); // half the transition speed
+      });
+    }
+  });
+</script>
+
+
+  <!-- reuse ScrollReveal & your main behavior scripts if available -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="assets/js/main.js"></script>
+
+  <!-- page-specific JS -->
+  <script src="assets/js/explore.js"></script>
+</body>
+</html>
